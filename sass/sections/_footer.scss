@@ -1,0 +1,130 @@
+.footer {
+    padding: 70px 0;
+
+    background-color: #1A1A1A;
+
+    /* Tablet */
+    @media (max-width: 1199px) {
+        padding: 60px 0;
+    }
+
+    /* Mobile */
+    @media (max-width: 899px) {
+        padding: 50px 0;
+    }
+
+    /* Mobile XS */
+    @media (max-width: 599px) {
+        padding: 40px 0;
+    }
+}
+
+.footer__row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 50px;
+
+    margin-bottom: 50px;
+
+    /* Tablet */
+    @media (max-width: 1199px) {
+        margin-bottom: 40px;
+    }
+
+    /* Mobile */
+    @media (max-width: 899px) {
+        flex-direction: column;
+        justify-content: flex-start;
+        row-gap: 30px;
+
+        margin-bottom: 30px;
+    }
+
+    /* Mobile XS */
+    @media (max-width: 599px) {
+        row-gap: 40px;
+
+        margin-bottom: 40px;
+    }
+}
+
+.footer__nav {
+    display: flex;
+    column-gap: 50px;
+
+    /* Tablet */
+    @media (max-width: 1199px) {
+        column-gap: 45px;
+    }
+
+    /* Mobile XS */
+    @media (max-width: 599px) {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 20px;
+    }
+}
+
+.footer__nav-item {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #fff; 
+    text-decoration: none;
+
+    transition: color 0.3s ease-in;
+}
+
+.footer__nav-item:hover {
+    color: #15D784;
+}
+
+.footer__socials {
+    display: flex;
+    column-gap: 30px;
+
+    /* Mobile XS */
+    @media (max-width: 599px) {
+        column-gap: 20px;
+    }
+}
+
+.footer__socials-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 48px;
+    height: 48px;
+
+    border-radius: 48px;
+    background: rgba(196, 196, 196, 0.10);
+
+    transition: background-color 0.3s ease-in;
+}
+
+.footer__socials-item:hover {
+    background-color: #15D784;
+}
+
+.footer__copyright {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.30);
+
+    p + p {
+        margin-top: 15px;
+    }
+
+    /* Mobile XS */
+    @media (max-width: 599px) {
+        padding: 0 42px;
+
+        line-height: 1.5;
+    }
+}
